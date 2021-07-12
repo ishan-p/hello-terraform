@@ -55,3 +55,10 @@ module "rds" {
   rds_security_group_id = module.network.rds_security_group_id
 }
 
+module "s3" {
+  source = "./modules/s3"
+}
+
+module "iam" {
+  source = "./modules/iam"
+}
